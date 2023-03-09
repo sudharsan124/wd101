@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form/Application</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+
+    <div style="display: flex; padding-right: 50%;">
+        <img src="images01.jpg" alt="New Images"
+        style="width:300px; ">
+
+    <div style="display: flex;">   
+    <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">APPLICATION FORM FOR REGISTRATION</h1>
+
+    <form id="application-form-for-registration" style="background-color: bisque; width: 300px; border: 15px solid blueviolet; padding: 50px; margin: 20px;" >
+      <div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          placeholder="Please Enter Applicant Name"
+          id="name"
+          required="true"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Your personal E-mail Id" id="email" required="true" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          placeholder="Secret Password"
+          id="password"
+          required="true"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required="true" />
+      </div>
+      <br />
+      <div>
+        <label>
+          <input type="checkbox" id="accepted-terms" required />
+          I sware that I will read all the terms and conditions and I accept it
+        </label>
+      </div>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+    </div>
+
+    <h2>Applicant Entries</h2>
+
+    <table id="applicant-entries">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Dob</th>
+          <th>Accepted terms?</th>
+        </tr>
+      </thead>
+      <tbody id="body-of-the-applicant-entries"></tbody>
+    </table>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
